@@ -1,0 +1,19 @@
+.show_kq{
+	color: red;
+	background-color: #EAEE68;
+	font-size: 60px;
+	text-align: center;
+}
+
+body {
+	background: #A3F6FF;
+}
+h2 {
+	outline-color: #000000
+}
+input {
+	color:#71EE68;
+	text-align: center;
+	background-size: contain;
+	font-size:15px;
+}
