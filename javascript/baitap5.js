@@ -8,3 +8,7 @@ function timsoconso1(n){
   }
   return socantim
 }
+function Inketqua(){
+  N = parseInt($("input").val())
+$(".show_kq").text(timsoconso1(N))
+}
