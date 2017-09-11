@@ -1,0 +1,13 @@
+.container {
+  width: 25%;
+}
+.container .row .col .btn.btn-info{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  font-size: 50px;
+}
+.show_kq{
+  font-size: 100px;
+  text-align: right;
+}
