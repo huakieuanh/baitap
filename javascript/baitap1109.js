@@ -43,10 +43,10 @@ function Clear(){
 }
 
 
-  function TinhToan(){
-    var so_a=Number(a)
-    var so_b=Number(b)
-    var kq=0
+function TinhToan(){
+  var so_a=Number(a)
+  var so_b=Number(b)
+  var kq=0
   if(p=="+"){
     kq=kq+(so_a+so_b)
   }
@@ -83,39 +83,20 @@ function Ketqua(n){
   }
 }
 
-function Ketqua(n){
-  x=[0,1,2,3,4,5,6,7,8,9];
-  a=""
-  b=""
-  var i=0;
-  for(i=0;i<x.length;i++){
-    if(n == x[i] && p == -1){
-      a = a+n
-      a = Number("a")
-    }
-    else if(n == x[i] && p !=-1){
-      b = b+n
-      b = Number("b")
-    }
-    else if(n!=x[i]){
-      p = n
-    }
+function Back(){
+  var so_a=Number(a)
+  var so_b=Number(b)
+  if(so_a>=10&& p==-1){
+    so_a = (so_a - so_a % 10)/10
+    $(".show_kq").text(so_a)
+    a=String(so_a)
   }
-   $(".show_kq").text(a,b,p)
-  var kq=0
-  if(p=="+"){
-    kq=kq+(a+b)
+  else if (so_b>=10&& p !=-1){
+    so_b = (so_b - so_b % 10)/10
+    $(".show_kq").text(so_b)
+    b=String(so_b)
   }
-  else if(p=="-"){
-    kq=kq+(a-b)
+  else {
+    $(".show_kq").text(0)
   }
-  else if(p=="x"){
-    kq=kq+(a*b)
-  }
-  else if(p==":"){
-    kq=kq+(a/b)
-  }
-  a = -1
-  b = -1
-  p = -1
-  $(".show_kq").text(kq)}
+}
