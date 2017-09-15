@@ -44,8 +44,8 @@ function Clear(){
 
 
 function TinhToan(){
-  var so_a=Number(a)
-  var so_b=Number(b)
+  var so_a=parseFloat(a)
+  var so_b=parseFloat(b)
   var kq=0
   if(p=="+"){
     kq=kq+(so_a+so_b)
@@ -67,7 +67,7 @@ function TinhToan(){
 
 function Ketqua(n){
   so=Number(n)
-  if(so>=0&&so<=9){
+  if(so>=0&&so<=9||n=="."){
     if(p == -1){
       a = a+n
       $(".show_kq").text(a)
@@ -84,17 +84,22 @@ function Ketqua(n){
 }
 
 function Back(){
-  var so_a=Number(a)
-  var so_b=Number(b)
-  if(so_a>=10&& p==-1){
-    so_a = (so_a - so_a % 10)/10
-    $(".show_kq").text(so_a)
-    a=String(so_a)
+  var A=""
+  var B=""
+  var i=0
+  if(a.length>=2 && p==-1){
+    for(i=0;i<a.length-1;i++){
+      A=A+a[i]
+    }
+    $(".show_kq").text(A)
+    a=A
   }
-  else if (so_b>=10&& p !=-1){
-    so_b = (so_b - so_b % 10)/10
-    $(".show_kq").text(so_b)
-    b=String(so_b)
+  else if (b.length>=2 && p !=-1){
+    for(i=0;i<b.length-1;i++){
+    B=B+b[i]
+    $(".show_kq").text(B)
+    }
+    b=B
   }
   else {
     $(".show_kq").text(0)
