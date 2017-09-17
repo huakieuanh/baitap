@@ -1,0 +1,33 @@
+#Hou {
+  background: green;
+  height: 6px;
+  width: 100px;
+  margin: 150px;
+  margin-left: 200px;
+  transform: translateX(50%);
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+#Min {
+  background: blue;
+  height: 6px;
+  width: 150px;
+  margin: 150px;
+  margin-left: 175px;
+  transform: translateX(50%);
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+#Sec {
+  background: red;
+  height: 6px;
+  width: 200px;
+  margin: 150px;
+  transform: translateX(50%);
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
