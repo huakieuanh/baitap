@@ -16,7 +16,7 @@ setInterval(function(){
   Ts=S*6
   Tm=M*6+S/60
   Th=H*30+(M*30)/60+(S*30)/3600
-  rotate($("#sec"),Ts-90)
-  rotate($("#.Min"),Tm-90)
-  rotate($("#.Hou"),Th-90)
+  rotate($("#Sec"),Ts-90)
+  rotate($("#Min"),Tm-90)
+  rotate($("#Hou"),Th-90)
 }, 1000)
