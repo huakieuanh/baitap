@@ -1,0 +1,31 @@
+.show_num{
+  font-size: 60px;
+  background-color: #86FF80;
+  width: 200px;
+  height: 100px;
+  border-style: ridge;
+  text-align: center;
+  color: #1500FF;
+}
+.manhinh1 .btn.btn-info{
+  width: 100px
+  height:500px;
+  font-size: 40px;
+  margin-left:50px;
+}
+
+.manhinh2 .btn.btn-info{
+  font-size: 40px;
+  width: 100px;
+  height:70px;
+  text-align: center;
+}
+
+.manhinh3 .show_text{
+  font-size: 50px;
+  background-color: #E5FF66;
+  font-style: bold;
+  color: red;
+  margin-right: 900px;
+  text-align: center;
+}
