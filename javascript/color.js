@@ -3,27 +3,9 @@ var c=[], a=[]
 var To=5000
 var T=5000
 function batdau(){
-  $(".manhinh1").css({display:"none"})
-  $(".manhinh2").css({display:"block"})
-  for(i=0;i<4;i++){
-    c[0]=x+Math.floor((Math.random()*256)+50)+","+Math.floor((Math.random()*50)+1)+","+Math.floor((Math.random()*20)+1)+")"
-    c[1]=x+Math.floor((Math.random()*50)+1)+","+Math.floor((Math.random()*256)+150)+","+Math.floor((Math.random()*20)+1)+")"
-    c[2]=x+Math.floor((Math.random()*40)+1)+","+Math.floor((Math.random()*40)+1)+","+Math.floor((Math.random()*256)+100)+")"
-    c[3]=x+Math.floor(Math.random()*10)+","+Math.floor(Math.random()*10)+","+Math.floor(Math.random()*25)+")"
-  }
-  for (i=0;i<c.length; i++){
-    j= Math.floor(Math.random()*4)
-    while(a[j]){
-      j = Math.floor(Math.random()*4)
-    }
-    a[j]=c[i]
-  }
-  so= Math.floor(Math.random()*4)
-  $(".color").css("background-color",a[so])
-  $(".color1").css("background-color",a[0])
-  $(".color2").css("background-color",a[1])
-  $(".color3").css("background-color",a[2])
-  $(".color4").css("background-color",a[3])
+  $(".manhinh1").hide()
+  $(".manhinh2").show()
+  daomau()
   setInterval(function(){
     if (check==true){
       To=5000
@@ -64,13 +46,34 @@ function Dung(){
   c=[]
   diem=diem+1
   $(".show_diem").text(diem+" Points")
-  for(i=0;i<4;i++){
-    c[0]=x+Math.floor((Math.random()*256)+50)+","+Math.floor((Math.random()*50)+1)+","+Math.floor((Math.random()*20)+1)+")"
-    c[1]=x+Math.floor((Math.random()*50)+1)+","+Math.floor((Math.random()*256)+150)+","+Math.floor((Math.random()*20)+1)+")"
-    c[2]=x+Math.floor((Math.random()*40)+1)+","+Math.floor((Math.random()*40)+1)+","+Math.floor((Math.random()*256)+100)+")"
-    c[3]=x+Math.floor(Math.random()*10)+","+Math.floor(Math.random()*10)+","+Math.floor(Math.random()*25)+")"
-  }
+  daomau()
 
+function Sai(){
+  $(".manhinh2").hide()
+  $(".manhinh3").show()
+  $(".show_diem").text(diem+" Points")
+}
+
+function color(n){
+  if(so==n-1){
+    Dung()
+  }
+  else{
+    Sai()
+  }
+}
+
+function random(start, end){
+  return Math.floor((Math.random()*end)+start)
+}
+
+function daomau(){
+  for(i=0;i<4;i++){
+    c[0]=x+random(50, 256)+","+random(1, 50)+","+random(1,20)+")"
+    c[1]=x+random(1, 50)+","+random(150, 256)+","+random(1, 20)+")"
+    c[2]=x+random(1, 40)+","+random(10, 50)+","+random(100, 256)+")"
+    c[3]=x+random(0, 20)+","+random(0, 10)+","+random(0, 25)+")"
+  }
   for (i=0;i<c.length; i++){
     j = Math.floor(Math.random()*4)
     while(a[j]){
@@ -84,20 +87,4 @@ function Dung(){
   $(".color2").css("background-color",a[1])
   $(".color3").css("background-color",a[2])
   $(".color4").css("background-color",a[3])
-}
-
-function Sai(){
-  $(".manhinh1").css({display:"none"})
-  $(".manhinh2").css({display:"none"})
-  $(".manhinh3").css({display:"block"})
-  $(".show_diem").text(diem+" Points")
-}
-
-function color(n){
-  if(so==n-1){
-    Dung()
-  }
-  else{
-    Sai()
-  }
 }
