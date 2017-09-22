@@ -1,0 +1,55 @@
+.batdau{
+  background-color: pink;
+  font-size: 50px;
+  width: 200px;
+  height: 70px;
+  margin-left: 800px;
+  margin-top: 50px;
+}
+.color{
+  margin-left:800px;
+  margin-top:20px;
+  width: 100px;
+  height:70px;
+}
+
+.color1{
+  margin-top:20px;
+  margin-left:750px;
+  width: 80px;
+  height:50px;
+}
+.color2{
+  margin-left:50px;
+  width: 80px;
+  height:50px;
+}
+.color3{
+  margin-top:20px;
+  margin-left:750px;
+  width: 80px;
+  height:50px;
+}
+.color4{
+  margin-left:50px;
+  width: 80px;
+  height:50px;
+}
+.show_diem{
+  margin-top: 5px;
+  margin-left: 900px;
+  width: 100px;
+  height:40px;
+  background-color: rgb(173, 255, 239);
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
+.show_text{
+  margin-left: 800px;
+  font-size: 50px;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: blue;
+}
+
