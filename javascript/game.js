@@ -44,8 +44,6 @@ var check=false
 var To=5000
 var T=5000
 function Dung(){
-  $(".manhinh1").css({display:"none"})
-  $(".manhinh2").css({display:"block"})
   c=Math.floor((Math.random() * 100) + 1)
   $(".show_num").text(c);
   a=b

@@ -8,22 +8,27 @@
   <script type="text/javascript" src="javascript/game.js"></script>
   <link rel="stylesheet" href="css/game.css"/>
 </head>
-<body style="margin-left:800px; margin-top:50px;">
-  <div class="manhinh1">
-    <p class="show_num"> </p>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="batdau()"> Start </button>
+<body style="margin-top:50px;">
+  <div class="manhinh1" style="margin-left:800px">
+    <p class="show_diem"> Diem: 0 </p>
+    <div>
+    <p class="show_num" style="font-size:70px;margin-top: 30px; color: green"> </p>
+    </div>
+    <div>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="batdau()" style="margin-top: 30px"> Start </button>
+    </div>
   </div>
   <div class="manhinh2" style="display: none;">
     <div class="w3-border">
       <div class="w3-grey" style="height:24px;width:100%"></div>
     </div>
-    <p class="show_num"> </p>
-    <p class="show_diem"> Diem: </p>>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="Lonhon()"> > </button>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="Nhohon()"> < </button>
+    <p class="show_diem" style="margin-left:850px;margin-top: 10px"> Diem: </p>
+    <p class="show_num" style="font-size:70px;margin-top: 30px; margin-left:850px;color: blue"> </p>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="Lonhon()" style="margin-left:800px; margin-top: 50px"> > </button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="Nhohon()" style="margin-left:20px;margin-top: 50px"> < </button>
   </div>
-  <div class="manhinh3" style="display: none;">
-    <p class="show_text"> The End </p>
+  <div class="manhinh3" style="display: none; margin-left:800px">
     <p class="show_diem"> Diem: </p>
+    <p class="show_text"> The End </p>
   </div>
 </body>
