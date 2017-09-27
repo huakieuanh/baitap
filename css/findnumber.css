@@ -1,0 +1,27 @@
+.fa-gamepad {
+  font-size: 150px;
+  color: green;
+  position: absolute;
+  bottom: 0;
+}
+
+.fa-gamepad.player2{
+  right: 0;
+}
+
+.show_diem{
+  font-size: 15px;
+}
+.show_diem .diem2{
+  margin-left: 900px;
+}
+
+.show_nextnumber {
+  font-weight: bold;
+  font-size: 20px;
+  width: 50px;
+  height: 50px
+  border: thin;
+  text-align: center;
+  background-color: yellow;
+}
