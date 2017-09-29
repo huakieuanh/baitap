@@ -8,7 +8,25 @@
 .fa-gamepad.player2{
   right: 0;
 }
+.fa-pause-circle{
+  margin-left: 900px;
+  font-size: 20px;
+  color: blue;
+  margin-top: 20px;
+}
+.fa-backward{
+  margin-top: 10px;
+  color: blue;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 
+.fa-step-backward{
+  margin-top: 10px;
+  color: blue;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 .show_diem{
   font-size: 15px;
 }
@@ -17,6 +35,8 @@
 }
 
 .show_nextnumber {
+  margin-left: 500px;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 20px;
   width: 50px;
@@ -24,4 +44,13 @@
   border: thin;
   text-align: center;
   background-color: yellow;
+}
+
+
+.fa-gamepad.foo {
+color:red;
+-webkit-transition:color 4s;
+-moz-transition:color 4s;
+-o-transition:color 4s;
+transition:color 4s
 }
