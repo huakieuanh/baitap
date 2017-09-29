@@ -11,26 +11,40 @@
 </head>
 <body>
   <div class="manhinh1" >
+    <audio id="audiotag1" src="audio/sample.wav" preload="auto"></audio>
     <div>
-      <button class="mode1" onclick="mode1()" style="margin-top: 30px"> 1 player </button>
-      <button class="mode2" onclick="mode2()" style="margin-top: 30px"> 2 players </button>
+      <button class="mode1" onclick="mode1()" style="margin-top: 30px; background-color: #E6EEFE"> 1 player </button>
+    </div>
+    <div>
+      <button class="mode2" onclick="mode2()" style="margin-top: 30px;background-color:#E6EEFE"> 2 players </button>
     </div>
     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="batdau()" style="margin-top: 30px"> Start </button>
   </div>
   <div class="manhinh2" style="display: none; font-size: 30px">
     <div class="w3-border">
-      <div class="w3-grey" style="background-color:rgb(0, 235, 8); height:24px;width:100%"></div>
+      <div class="w3-grey" style="background-color:rgb(100, 235, 8); height:24px;width:100%"></div>
+    </div>
+    <div>
+      <button class="fa fa-backward" aria-hidden="true" onclick="Back()"> </button>
+      <button class="fa fa-pause-circle" aria-hidden="true" onclick="Pause()"> </button>
     </div>
     <div class="show_diem"> </div>
+    <p class="show_nextnumber"> </p>
     <div>
-      <p class="show_nextnumber"> </p>
       <div class="1to100" style="font-size: 30px">
       </div>
     </div>
+    <div class="thoigianchay"> </div>
     <i class="fa fa-gamepad" aria-hidden="true"></i>
   </div>
   <div class="manhinh3" style="display: none;font-size: 50px">
+    <button class="fa fa-step-backward" aria-hidden="true" onClick="Restart()"> </button>
+    <p class="showkq" style="width: 300px; height: 20px"> </p>
+    <p class="show_time" style="margin-top: 20px"> </p>
     <p class="show_text"> </p>
     <div class="show_diem"> </div>
+  </div>
+  <div class="manhinhpause" style="display: none;">
+    <button class="fa fa-play-circle" aria-hidden="true" onclick="Play()"></i>
   </div>
 </body>
