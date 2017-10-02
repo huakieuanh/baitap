@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+}
+.show_text {
+    font-family: Copse;
+    margin: auto;
+    margin-top: 60px;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+  }
+
+  /*.mdl-textfield--floating-label.is-focused .mdl-textfield__label{
+    color: red;
+  }
+
+  .mdl-textfield--floating-label.is-dirty .mdl-textfield__label{
+    color: red;
+  }
+
+  .mdl-textfield--floating-label.is-focused .mdl-textfield__input{
+    border-bottom: 1px solid red;
+  }
+
+  .mdl-textfield--floating-label.is-dirty .mdl-textfield__input{
+    border-bottom: 1px solid red;
+  }*/
+
+  .find{
+    color: white;
+    font-family: Copse;
+    z-index: 10;
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+    width: 20%;
+  }
+
+  .find label{
+    font-style: italic;
+    color: white;
+  }
+
+  .find input{
+    border-bottom: 1px solid white;
+  }
+  .bkg{
+    width: 100%; height: 100%;
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+  }
